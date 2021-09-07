@@ -1,7 +1,8 @@
 from django.db import models
 from django.db.models.base import Model
 from client.models import  Client
-# Create your models here.
+
+
 class Orden(models.Model):
     OPTIONS = [
         ('solicitada', 'solicitada'),
@@ -16,4 +17,4 @@ class Orden(models.Model):
 
 
     def __str__(self) -> str:
-        return self.name
+        return self.nmr_orden
